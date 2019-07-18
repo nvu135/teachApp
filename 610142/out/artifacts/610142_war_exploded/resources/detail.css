@@ -1,0 +1,2798 @@
+.small-schedule-days {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 5px;
+    padding-left: 70px
+}
+
+.small-schedule-day {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+    text-align: center
+}
+
+.small-schedule-hours {
+    display: -ms-flexbox;
+    display: flex;
+    height: 156px
+}
+
+.small-schedule-range {
+    width: 70px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+
+.small-schedule-range, .small-schedule-range > p {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center
+}
+
+.small-schedule-range > p {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.small-schedule-hour {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    display: -ms-flexbox;
+    display: flex;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+
+.small-schedule-section {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.small-schedule-cell {
+    height: 26px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd
+}
+
+.small-schedule-cell:nth-child(6) {
+    border-bottom: 1px solid #ddd
+}
+
+.small-schedule-section:nth-child(7) .small-schedule-cell {
+    border-right: 1px solid #ddd
+}
+
+.small-schedule-cell-tooltip-ref {
+    width: 100%;
+    height: 100%
+}
+
+.small-schedule-cell-active {
+    height: 100%;
+    width: 100%;
+    background: #7ec937
+}
+
+.small-schedule-timezone {
+    margin-top: 8px;
+    font-size: 10px;
+    color: #777;
+    text-align: center
+}
+
+.small-schedule-day-fromTeacherProfile1 {
+    margin-bottom: 3px
+}
+
+.small-schedule-button, .small-schedule-button-mobile, .small-schedule-button-table {
+    height: 42px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333
+}
+
+.small-schedule-button {
+    width: 327px
+}
+
+.small-schedule-button-mobile {
+    width: 100%;
+    max-width: 280px;
+    height: 36px
+}
+
+.small-schedule-button-table {
+    height: 36px;
+    padding: 0 12px
+}
+
+.flex-center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.small-schedule .small-schedule-section .small-schedule-cell:last-child {
+    border-bottom: 1px solid #ddd
+}
+
+.small-schedule .small-schedule-section:nth-child(7) .small-schedule-cell:first-child {
+    border-top-right-radius: 3px
+}
+
+.small-schedule .small-schedule-section:nth-child(7) .small-schedule-cell:last-child {
+    border-bottom-right-radius: 3px
+}
+
+.LessonsCard-desktop .teacherCard-isSchedule, .LessonsCard-mobile .teacherCard-isSchedule, .LessonsCard-tablet .teacherCard-isSchedule {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777
+}
+
+.LessonsCard-desktop .bookCard-support-icon, .LessonsCard-mobile .bookCard-support-icon, .LessonsCard-tablet .bookCard-support-icon {
+    margin-left: 5px
+}
+
+.LessonsCard-desktop .lessonCard-box, .LessonsCard-mobile .lessonCard-box, .LessonsCard-tablet .lessonCard-box {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative
+}
+
+.LessonsCard-desktop .lessonCard-box .lessonCard-discount, .LessonsCard-mobile .lessonCard-box .lessonCard-discount, .LessonsCard-tablet .lessonCard-box .lessonCard-discount {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #ff7b73;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 10px
+}
+
+.LessonsCard-desktop .lessonCard-box:disabled, .LessonsCard-desktop .lessonCard-box[disabled], .LessonsCard-mobile .lessonCard-box:disabled, .LessonsCard-mobile .lessonCard-box[disabled], .LessonsCard-tablet .lessonCard-box:disabled, .LessonsCard-tablet .lessonCard-box[disabled] {
+    cursor: not-allowed
+}
+
+.LessonsCard-desktop .lessonCards-bar, .LessonsCard-mobile .lessonCards-bar, .LessonsCard-tablet .lessonCards-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.LessonsCard-desktop .lessonCard-bar, .LessonsCard-mobile .lessonCard-bar, .LessonsCard-tablet .lessonCard-bar {
+    padding: 12px 15px 11px;
+    border-radius: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff
+}
+
+.LessonsCard-desktop .lessonCard-box:hover .lessonCard-bar, .LessonsCard-mobile .lessonCard-box:hover .lessonCard-bar, .LessonsCard-tablet .lessonCard-box:hover .lessonCard-bar {
+    background-color: hsla(0, 0%, 80%, .2)
+}
+
+.LessonsCard-desktop .lessonCard-title, .LessonsCard-mobile .lessonCard-title, .LessonsCard-tablet .lessonCard-title {
+    font-size: 14px;
+    color: #333
+}
+
+.LessonsCard-desktop .cardTitle.LessonsCard-title, .LessonsCard-mobile .cardTitle.LessonsCard-title, .LessonsCard-tablet .cardTitle.LessonsCard-title {
+    margin-bottom: 30px
+}
+
+.LessonsCard-desktop .lessonCard-content, .LessonsCard-mobile .lessonCard-content, .LessonsCard-tablet .lessonCard-content {
+    font-size: 12px;
+    color: #777
+}
+
+.LessonsCard-desktop .lessonCard-content .lesson-count-lowercase, .LessonsCard-mobile .lessonCard-content .lesson-count-lowercase, .LessonsCard-tablet .lessonCard-content .lesson-count-lowercase {
+    text-transform: lowercase
+}
+
+.LessonsCard-desktop .lessonCard-readDetail, .LessonsCard-mobile .lessonCard-readDetail, .LessonsCard-tablet .lessonCard-readDetail {
+    font-size: 14px;
+    color: #337ab7;
+    cursor: pointer
+}
+
+.LessonsCard-desktop .lessonCard-readDetail:before, .LessonsCard-mobile .lessonCard-readDetail:before, .LessonsCard-tablet .lessonCard-readDetail:before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    margin: 0 7px;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #333
+}
+
+.LessonsCard-desktop .blackbar, .LessonsCard-mobile .blackbar, .LessonsCard-tablet .blackbar {
+    height: auto;
+    margin: 7px 0 10px
+}
+
+.LessonsCard-desktop .lessonCard-price-green, .LessonsCard-desktop .lessonCard-price-red, .LessonsCard-mobile .lessonCard-price-green, .LessonsCard-mobile .lessonCard-price-red, .LessonsCard-tablet .lessonCard-price-green, .LessonsCard-tablet .lessonCard-price-red {
+    min-width: 88px;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 103px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4cd1d0;
+    background-color: rgba(76, 209, 208, .1);
+    white-space: nowrap
+}
+
+.LessonsCard-desktop .lessonCard-price-red, .LessonsCard-mobile .lessonCard-price-red, .LessonsCard-tablet .lessonCard-price-red {
+    color: #ff7b73;
+    background-color: rgba(255, 123, 115, .1)
+}
+
+.LessonsCard-desktop .specificSkills, .LessonsCard-mobile .specificSkills, .LessonsCard-tablet .specificSkills {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.LessonsCard-desktop .specificSkills > .skills, .LessonsCard-mobile .specificSkills > .skills, .LessonsCard-tablet .specificSkills > .skills {
+    margin-top: 15px
+}
+
+.LessonsCard-desktop .specificSkills .skills, .LessonsCard-mobile .specificSkills .skills, .LessonsCard-tablet .specificSkills .skills {
+    height: 32px;
+    margin-right: 10px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 19px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+    cursor: default
+}
+
+.LessonsCard-desktop .personalTags, .LessonsCard-mobile .personalTags, .LessonsCard-tablet .personalTags {
+    margin-top: 32px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-bookBtn, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-bookBtn, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-bookBtn {
+    min-width: 660px;
+    height: 42px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-prieCard, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-prieCard, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-prieCard {
+    width: 153px;
+    height: 91px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-prieCard-time, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-prieCard-time, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-prieCard-time {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-title, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-title, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-price, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-price, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-price {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-category, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-language, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-tags, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-taught, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-category, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-language, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-tags, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-taught, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-category, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-language, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-tags, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-taught {
+    margin-bottom: 20px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-category .title, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-language .title, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-tags .title, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-taught .title, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-category .title, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-language .title, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-tags .title, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-taught .title, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-category .title, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-language .title, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-tags .title, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-taught .title {
+    color: #777;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    text-transform: uppercase
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-category .content, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-language .content, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-tags .content, .LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-taught .content, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-category .content, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-language .content, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-tags .content, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-taught .content, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-category .content, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-language .content, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-tags .content, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-taught .content {
+    color: #333;
+    font-size: 16px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-taught, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-taught, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-taught {
+    color: #777;
+    font-size: 12px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-tags span, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-tags span, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-tags span {
+    display: inline-block;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding: 6px 8px;
+    margin-right: 12px;
+    margin-bottom: 8px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .space-detail, .LessonsCard-mobile .modal-lessonDetail .space-detail, .LessonsCard-tablet .modal-lessonDetail .space-detail {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    margin-top: 20px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .space-detail .notice-text, .LessonsCard-mobile .modal-lessonDetail .space-detail .notice-text, .LessonsCard-tablet .modal-lessonDetail .space-detail .notice-text {
+    margin-left: 12px;
+    margin-right: 30px;
+    line-height: 20px
+}
+
+.LessonsCard-desktop .modal-lessonDetail .modal-lessonDetail-description, .LessonsCard-mobile .modal-lessonDetail .modal-lessonDetail-description, .LessonsCard-tablet .modal-lessonDetail .modal-lessonDetail-description {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    color: #333
+}
+
+.LessonsCard-desktop .modal-lessonDetail .lessonCard-price-green, .LessonsCard-desktop .modal-lessonDetail .lessonCard-price-red, .LessonsCard-mobile .modal-lessonDetail .lessonCard-price-green, .LessonsCard-mobile .modal-lessonDetail .lessonCard-price-red, .LessonsCard-tablet .modal-lessonDetail .lessonCard-price-green, .LessonsCard-tablet .modal-lessonDetail .lessonCard-price-red {
+    cursor: default
+}
+
+.LessonsCard-desktop .menu-items, .LessonsCard-mobile .menu-items, .LessonsCard-tablet .menu-items {
+    min-width: 200px;
+    left: auto;
+    right: 0
+}
+
+.LessonsCard-mobile .lessonCard-bar {
+    padding: 12px 9px
+}
+
+.LessonsCard-mobile .lessonCard-bar .lessonCard-title {
+    font-weight: 700
+}
+
+.LessonsCard-mobile .lessonCard-bar .lessonCard-currentLesson {
+    font-size: 12px;
+    color: #777;
+    font-weight: 300;
+    margin-top: 5px
+}
+
+.LessonsCard-mobile .lessonCard-bar .lessonCard-currentLesson .lesson-count-lowercase {
+    margin-top: 5px
+}
+
+.LessonsCard-mobile .lessonCard-bar .lessonCard-discount {
+    position: static;
+    border-radius: 4px;
+    margin-top: 7px;
+    width: -webkit-fit-content;
+    width: fit-content
+}
+
+.LessonsCard-mobile .lessonCard-bar .lessonCard-right {
+    position: absolute;
+    right: 0;
+    bottom: 16px
+}
+
+.LessonsCard-mobile .lessonCard-bar .lessonCard-right .lessonCard-price-green, .LessonsCard-mobile .lessonCard-bar .lessonCard-right .lessonCard-price-red {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px
+}
+
+.LessonsCard-mobile .modal-lessonDetail .modal-footer {
+    padding: 0;
+    margin: 0 20px
+}
+
+.LessonsCard-mobile .modal-lessonDetail .modal-footer .modal-lessonDetail-bookBtn {
+    width: 100%;
+    min-width: inherit
+}
+
+.Video {
+    position: relative
+}
+
+.Video, .Video-mask {
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.Video-mask {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    opacity: .5;
+    z-index: 900;
+    cursor: pointer
+}
+
+.Video-mask:hover {
+    opacity: 1
+}
+
+.Video-paly-botton {
+    width: 60px;
+    height: 60px
+}
+
+.Video-body {
+    width: 100%;
+    height: 100%
+}
+
+.Video video::-internal-media-controls-download-button {
+    display: none
+}
+
+.Video video::-webkit-media-controls-enclosure {
+    overflow: hidden
+}
+
+.Video video::-webkit-media-controls-panel {
+    width: calc(100% + 33px)
+}
+
+.Video-url {
+    display: block;
+    margin-top: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal
+}
+
+.TextOverflow {
+    overflow: hidden;
+    position: relative;
+    z-index: 7;
+    word-break: break-word
+}
+
+.TextOverflow-readMore {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 8
+}
+
+.TextOverflow-readMore-bgWhite {
+    background-color: #fff
+}
+
+.TextOverflow-readMore-text {
+    padding-right: 70px;
+    background-color: #fff;
+    color: #337ab7;
+    cursor: pointer
+}
+
+.TextOverflow-readMore-ellipsis {
+    padding-left: 20px;
+    background: linear-gradient(90deg, transparent, #fff 66%)
+}
+
+.profile-oxford-score {
+    width: 700px
+}
+
+.profile-oxford-score .modal-body {
+    padding-top: 15px
+}
+
+.profile-oxford-score .modal-body:after {
+    height: 20px
+}
+
+.profile-oxford-score .more-info {
+    margin: 10px 0 0;
+    font-size: 13px;
+    line-height: 1.5
+}
+
+.profile-oxford-score-top {
+    text-align: center
+}
+
+@media (max-width: 350px) {
+    .profile-oxford-score-top img {
+        width: 280px
+    }
+}
+
+.profile-oxford-score-top h4 {
+    font-size: 30px
+}
+
+.profile-oxford-score-top h3, .profile-oxford-score-top h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.3
+}
+
+.profile-oxford-score-top h3 {
+    font-size: 36px
+}
+
+.profile-oxford-score-top h6 {
+    margin: 0 0 10px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+.profile-oxford-score-center h6 {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3
+}
+
+.oxford-description {
+    margin-top: 10px
+}
+
+.oxford-description p {
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.5
+}
+
+.oxford-table {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 13px;
+    text-align: left
+}
+
+.oxford-table th {
+    font-weight: 700
+}
+
+.oxford-table td, .oxford-table th {
+    padding: 10px;
+    border: 1px solid #ddd
+}
+
+.oxford-table .oxford-header-main {
+    font-size: 120%;
+    font-weight: 700
+}
+
+.stars-box {
+    height: 12px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.stars-box .star {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    background: url(https://d1m3ds7i7t710d.cloudfront.net/orion/static/media/star.0f1dd6bd.svg) no-repeat 50%
+}
+
+.stars-box .number {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fec400
+}
+
+.Favourite {
+    margin-left: 20px;
+    cursor: pointer
+}
+
+.TeacherInfoCard-desktop .teacherCard, .TeacherInfoCard-mobile .teacherCard, .TeacherInfoCard-tablet .teacherCard {
+    margin-bottom: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.TeacherInfoCard-desktop .teacherCard-left, .TeacherInfoCard-mobile .teacherCard-left, .TeacherInfoCard-tablet .teacherCard-left {
+    padding: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.TeacherInfoCard-desktop .show-oopt-badge, .TeacherInfoCard-mobile .show-oopt-badge, .TeacherInfoCard-tablet .show-oopt-badge {
+    width: 36px;
+    height: 16px;
+    border-radius: 2px;
+    padding: 0 2px;
+    margin: 5px 0 17px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    background: #94b006;
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+.TeacherInfoCard-desktop .oopt-show-wrap, .TeacherInfoCard-mobile .oopt-show-wrap, .TeacherInfoCard-tablet .oopt-show-wrap {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.TeacherInfoCard-desktop .teacherCard-part1, .TeacherInfoCard-mobile .teacherCard-part1, .TeacherInfoCard-tablet .teacherCard-part1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.TeacherInfoCard-desktop .teacherCard-part2, .TeacherInfoCard-mobile .teacherCard-part2, .TeacherInfoCard-tablet .teacherCard-part2 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.TeacherInfoCard-desktop .teacherCard-middle, .TeacherInfoCard-mobile .teacherCard-middle, .TeacherInfoCard-tablet .teacherCard-middle {
+    padding-top: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.TeacherInfoCard-desktop .teacherCard-right, .TeacherInfoCard-mobile .teacherCard-right, .TeacherInfoCard-tablet .teacherCard-right {
+    width: 150px;
+    padding-top: 20px;
+    padding-right: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.TeacherInfoCard-desktop .teacherPic, .TeacherInfoCard-mobile .teacherPic, .TeacherInfoCard-tablet .teacherPic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .2)
+}
+
+.TeacherInfoCard-desktop .Online:before, .TeacherInfoCard-mobile .Online:before, .TeacherInfoCard-tablet .Online:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    border-radius: 4px;
+    background-color: #5ebd5e
+}
+
+.TeacherInfoCard-desktop .Online, .TeacherInfoCard-mobile .Online, .TeacherInfoCard-tablet .Online {
+    margin-top: 15px;
+    font-size: 11px;
+    color: #777
+}
+
+.TeacherInfoCard-desktop .Offline:before, .TeacherInfoCard-mobile .Offline:before, .TeacherInfoCard-tablet .Offline:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    border-radius: 4px;
+    background-color: #9b9b9b
+}
+
+.TeacherInfoCard-desktop .Offline, .TeacherInfoCard-mobile .Offline, .TeacherInfoCard-tablet .Offline {
+    margin-top: 15px;
+    font-size: 11px;
+    color: #777
+}
+
+.TeacherInfoCard-desktop .Offline-diffTime, .TeacherInfoCard-mobile .Offline-diffTime, .TeacherInfoCard-tablet .Offline-diffTime {
+    margin-top: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    color: #777
+}
+
+.TeacherInfoCard-desktop .teacherCard-name, .TeacherInfoCard-mobile .teacherCard-name, .TeacherInfoCard-tablet .teacherCard-name {
+    margin-bottom: 3px;
+    font-size: 23px;
+    font-weight: 500;
+    color: #333
+}
+
+.TeacherInfoCard-desktop .teacherCard-personalInfo, .TeacherInfoCard-mobile .teacherCard-personalInfo, .TeacherInfoCard-tablet .teacherCard-personalInfo {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 25px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #777
+}
+
+.TeacherInfoCard-desktop .teacherCard-time, .TeacherInfoCard-mobile .teacherCard-time, .TeacherInfoCard-tablet .teacherCard-time {
+    font-size: 10px;
+    color: #777
+}
+
+.TeacherInfoCard-desktop .teacherCard-teaches, .TeacherInfoCard-mobile .teacherCard-teaches, .TeacherInfoCard-tablet .teacherCard-teaches {
+    margin-top: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.TeacherInfoCard-desktop .teacherCard-teaches-title, .TeacherInfoCard-mobile .teacherCard-teaches-title, .TeacherInfoCard-tablet .teacherCard-teaches-title {
+    margin-top: 4px;
+    margin-right: 15px;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: 300;
+    color: #777;
+    text-transform: uppercase
+}
+
+.TeacherInfoCard-desktop .teacherCard-teaches-languages, .TeacherInfoCard-mobile .teacherCard-teaches-languages, .TeacherInfoCard-tablet .teacherCard-teaches-languages {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.TeacherInfoCard-desktop .teacherCard-teaches-languages > div, .TeacherInfoCard-mobile .teacherCard-teaches-languages > div, .TeacherInfoCard-tablet .teacherCard-teaches-languages > div {
+    margin-right: 10px
+}
+
+.TeacherInfoCard-desktop .teacherCard-teaches-languages > div .language, .TeacherInfoCard-mobile .teacherCard-teaches-languages > div .language, .TeacherInfoCard-tablet .teacherCard-teaches-languages > div .language {
+    text-transform: capitalize
+}
+
+.TeacherInfoCard-desktop .teacherCard-right-body, .TeacherInfoCard-mobile .teacherCard-right-body, .TeacherInfoCard-tablet .teacherCard-right-body {
+    margin-top: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    line-height: 26px;
+    font-size: 12px;
+    color: #333
+}
+
+.TeacherInfoCard-desktop .teacherCard-stars, .TeacherInfoCard-mobile .teacherCard-stars, .TeacherInfoCard-tablet .teacherCard-stars {
+    margin-top: 6px;
+    margin-bottom: 6px
+}
+
+.TeacherInfoCard-desktop .teacherCard-right-icon, .TeacherInfoCard-mobile .teacherCard-right-icon, .TeacherInfoCard-tablet .teacherCard-right-icon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.TeacherInfoCard-desktop .teacherCard-right-icon1, .TeacherInfoCard-mobile .teacherCard-right-icon1, .TeacherInfoCard-tablet .teacherCard-right-icon1 {
+    cursor: pointer
+}
+
+.TeacherInfoCard-desktop .teacherCard-right-icon2, .TeacherInfoCard-mobile .teacherCard-right-icon2, .TeacherInfoCard-tablet .teacherCard-right-icon2 {
+    margin-left: 20px;
+    cursor: pointer
+}
+
+.TeacherInfoCard-desktop .readMore, .TeacherInfoCard-mobile .readMore, .TeacherInfoCard-tablet .readMore {
+    cursor: pointer;
+    color: #337ab7
+}
+
+.TeacherInfoCard-desktop .flag-icon, .TeacherInfoCard-mobile .flag-icon, .TeacherInfoCard-tablet .flag-icon {
+    margin-left: 10px;
+    vertical-align: unset
+}
+
+.TeacherInfoCard-desktop .aboutMe, .TeacherInfoCard-mobile .aboutMe, .TeacherInfoCard-tablet .aboutMe {
+    margin: 0 30px 40px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+    white-space: pre-wrap
+}
+
+.TeacherInfoCard-desktop .aboutMe .cardTitle, .TeacherInfoCard-mobile .aboutMe .cardTitle, .TeacherInfoCard-tablet .aboutMe .cardTitle {
+    margin-bottom: 20px
+}
+
+.TeacherInfoCard-desktop .aboutMe .aboutMe-content, .TeacherInfoCard-mobile .aboutMe .aboutMe-content, .TeacherInfoCard-tablet .aboutMe .aboutMe-content {
+    line-height: 21px;
+    word-break: break-word
+}
+
+.TeacherInfoCard-desktop .aboutMe ul, .TeacherInfoCard-mobile .aboutMe ul, .TeacherInfoCard-tablet .aboutMe ul {
+    line-height: 21px
+}
+
+.TeacherInfoCard-desktop .aboutMe .aboutMeTime, .TeacherInfoCard-mobile .aboutMe .aboutMeTime, .TeacherInfoCard-tablet .aboutMe .aboutMeTime {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777
+}
+
+.TeacherInfoCard-desktop .aboutMeReadMore, .TeacherInfoCard-mobile .aboutMeReadMore, .TeacherInfoCard-tablet .aboutMeReadMore {
+    margin-bottom: 40px
+}
+
+.TeacherInfoCard-desktop .aboutMeContent, .TeacherInfoCard-mobile .aboutMeContent, .TeacherInfoCard-tablet .aboutMeContent {
+    line-height: 21px
+}
+
+.TeacherInfoCard-desktop .aboutMe-introduction, .TeacherInfoCard-mobile .aboutMe-introduction, .TeacherInfoCard-tablet .aboutMe-introduction {
+    white-space: pre-wrap
+}
+
+.TeacherInfoCard-desktop .contactTeacher-bar, .TeacherInfoCard-mobile .contactTeacher-bar, .TeacherInfoCard-tablet .contactTeacher-bar {
+    margin-bottom: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.TeacherInfoCard-desktop .contactTeacher-label, .TeacherInfoCard-mobile .contactTeacher-label, .TeacherInfoCard-tablet .contactTeacher-label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333
+}
+
+.TeacherInfoCard-desktop .ModalContactTeacher, .TeacherInfoCard-mobile .ModalContactTeacher, .TeacherInfoCard-tablet .ModalContactTeacher {
+    cursor: default
+}
+
+.TeacherInfoCard-desktop .ModalContactTeacher .textarea_left, .TeacherInfoCard-mobile .ModalContactTeacher .textarea_left, .TeacherInfoCard-tablet .ModalContactTeacher .textarea_left {
+    width: 100%
+}
+
+.TeacherInfoCard-desktop .ModalContactSuccess, .TeacherInfoCard-mobile .ModalContactSuccess, .TeacherInfoCard-tablet .ModalContactSuccess {
+    cursor: default
+}
+
+.TeacherInfoCard-desktop .teacherCard-body, .TeacherInfoCard-mobile .teacherCard-body, .TeacherInfoCard-tablet .teacherCard-body {
+    width: 100%
+}
+
+.TeacherInfoCard-desktop .teacherCard {
+    margin-bottom: 30px
+}
+
+.TeacherInfoCard-desktop .aboutMe {
+    margin-bottom: 30px;
+    padding-top: 30px
+}
+
+.TeacherInfoCard-desktop .teacherCard-switch-profile-btn {
+    margin-top: 30px
+}
+
+.TeacherInfoCard-tablet .aboutMe {
+    margin: 30px 30px 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd
+}
+
+.TeacherInfoCard-tablet .teacherCard-switch-profile-btn {
+    margin-top: 30px
+}
+
+.TeacherInfoCard-mobile .teacherCard {
+    margin-bottom: 0
+}
+
+.TeacherInfoCard-mobile .teacherCard-body {
+    margin: 20px 20px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 1 1;
+    flex: 1 1
+}
+
+.TeacherInfoCard-mobile .teacherCard-avatar {
+    width: 100%;
+    margin-bottom: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.TeacherInfoCard-mobile .redbar-left-title {
+    font-size: 1.6rem
+}
+
+.TeacherInfoCard-mobile .aboutMe {
+    margin: 30px 20px 0;
+    padding-top: 30px;
+    border-bottom: 1px solid #ddd
+}
+
+.TeacherInfoCard-mobile .teachingMaterial {
+    margin-bottom: 30px
+}
+
+.TeacherInfoCard-mobile .aboutMe-content {
+    line-height: 21px;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 30px
+}
+
+.TeacherInfoCard-mobile .aboutMe-introduction {
+    margin-bottom: 30px
+}
+
+.TeacherInfoCard-mobile .teacherCard-part1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.TeacherInfoCard-mobile .teacherCard-right {
+    width: unset;
+    padding-bottom: 18px;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.TeacherInfoCard-mobile .teacherCard-right-body {
+    margin-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    line-height: 26px;
+    font-size: 12px;
+    color: #333
+}
+
+.TeacherInfoCard-mobile .teacherCard-teaches {
+    margin-top: 16px;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.TeacherInfoCard-mobile .teacherCard-teaches-title {
+    margin-bottom: 7px
+}
+
+.TeacherInfoCard-mobile .Online {
+    margin-top: 4px
+}
+
+.TeacherInfoCard-mobile .teacherCard-middle {
+    padding-top: 0
+}
+
+.TeacherInfoCard-mobile .teacherCard-name {
+    height: 27px;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.TeacherInfoCard-mobile .teacherCard-personalInfo {
+    margin-bottom: 10px;
+    font-size: 1.4rem
+}
+
+.TeacherInfoCard-mobile .teacherCard-stars {
+    margin-top: 0
+}
+
+.TeacherInfoCard-mobile .teacherCard-switch-profile-btn {
+    margin-top: 30px
+}
+
+.Teacher .ProfessionalExpCard-desktop.teacherCard-box, .Teacher .ProfessionalExpCard-mobile.teacherCard-box, .Teacher .ProfessionalExpCard-tablet.teacherCard-box {
+    padding-top: 0;
+    padding-bottom: 20px
+}
+
+.ProfessionalExpCard-desktop .experiences, .ProfessionalExpCard-mobile .experiences, .ProfessionalExpCard-tablet .experiences {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.ProfessionalExpCard-desktop .experiences-text, .ProfessionalExpCard-mobile .experiences-text, .ProfessionalExpCard-tablet .experiences-text {
+    margin: 10px 0;
+    width: 200px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777
+}
+
+.ProfessionalExpCard-desktop .experiences-text-time, .ProfessionalExpCard-mobile .experiences-text-time, .ProfessionalExpCard-tablet .experiences-text-time {
+    font-size: 12px
+}
+
+.ProfessionalExpCard-desktop .redbar-left, .ProfessionalExpCard-desktop .redbar-left-title, .ProfessionalExpCard-mobile .redbar-left, .ProfessionalExpCard-mobile .redbar-left-title, .ProfessionalExpCard-tablet .redbar-left, .ProfessionalExpCard-tablet .redbar-left-title {
+    height: 14px;
+    padding-left: 10px;
+    border-left: 2px solid #ff4338;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333
+}
+
+.ProfessionalExpCard-desktop .redbar-left, .ProfessionalExpCard-mobile .redbar-left, .ProfessionalExpCard-tablet .redbar-left {
+    margin-top: 4px;
+    margin-bottom: 23px
+}
+
+.ProfessionalExpCard-desktop .redbar-left-title, .ProfessionalExpCard-mobile .redbar-left-title, .ProfessionalExpCard-tablet .redbar-left-title {
+    margin-bottom: 30px;
+    font-size: 23px
+}
+
+.ProfessionalExpCard-desktop .discoverMore, .ProfessionalExpCard-mobile .discoverMore, .ProfessionalExpCard-tablet .discoverMore {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #337ab7;
+    cursor: pointer
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-bar, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-bar, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-bar {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body-left, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body-left, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body-left {
+    width: 78px;
+    margin-right: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 12px;
+    color: #777
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body-right, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body-right, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body-right {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-left: 2px solid #ccc;
+    position: relative
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body-right-title, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body-right-title, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body-right-title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body:last-child .professionanExpModal-body-right, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body:last-child .professionanExpModal-body-right, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body:last-child .professionanExpModal-body-right {
+    padding-bottom: 0
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body:nth-child(2):before, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body:nth-child(2):before, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body:nth-child(2):before {
+    content: "";
+    position: absolute;
+    left: 95px;
+    top: 0;
+    width: 8px;
+    height: 12px;
+    background-color: #fff;
+    z-index: 99
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body-right:before, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body-right:before, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body-right:before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    z-index: 999
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body-right-note, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body-right-note, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body-right-note {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-body-right-content, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body-right-content, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-body-right-content {
+    font-size: 12px;
+    line-height: 18px;
+    color: #333
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-bar-last-bar, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-bar-last-bar, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-bar-last-bar {
+    margin-bottom: 20px
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-bar-last-bar:last-child, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-bar-last-bar:last-child, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-bar-last-bar:last-child {
+    margin-bottom: 0
+}
+
+.ProfessionalExpCard-desktop .professionanExpModal .professionanExpModal-bar-last .font-14-333, .ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-bar-last .font-14-333, .ProfessionalExpCard-tablet .professionanExpModal .professionanExpModal-bar-last .font-14-333 {
+    margin-bottom: 5px
+}
+
+.Teacher .ProfessionalExpCard-desktop.teacherCard-box, .Teacher .ProfessionalExpCard-tablet.teacherCard-box {
+    padding-top: 40px
+}
+
+.ProfessionalExpCard-tablet .discoverMore {
+    margin-top: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer
+}
+
+.Teacher .ProfessionalExpCard-mobile.teacherCard-box {
+    padding-top: 30px
+}
+
+.Teacher-mobile .ProfessionalExpCard-mobile .cardTitle {
+    margin-bottom: 20px
+}
+
+.ProfessionalExpCard-mobile .professionalExp-moreBtn {
+    width: 100%;
+    height: 36px;
+    text-transform: uppercase
+}
+
+.ProfessionalExpCard-mobile .professionanExpModal .modal-body {
+    padding: 20px
+}
+
+.ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body:nth-child(2):before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 0;
+    width: 8px;
+    height: 12px;
+    background-color: #fff;
+    z-index: 99
+}
+
+.ProfessionalExpCard-mobile .professionanExpModal .professionanExpModal-body-right-title {
+    font-size: 1.4rem
+}
+
+.StatisticsCard-desktop .statistics, .StatisticsCard-mobile .statistics, .StatisticsCard-tablet .statistics {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.StatisticsCard-desktop .statistic, .StatisticsCard-mobile .statistic, .StatisticsCard-tablet .statistic {
+    width: 192px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center
+}
+
+.StatisticsCard-desktop .statistic-number, .StatisticsCard-mobile .statistic-number, .StatisticsCard-tablet .statistic-number {
+    height: 42px;
+    margin-bottom: 5px;
+    font-size: 36px;
+    font-weight: 100;
+    color: #333
+}
+
+.StatisticsCard-desktop .statistic-label, .StatisticsCard-mobile .statistic-label, .StatisticsCard-tablet .statistic-label {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.StatisticsCard-desktop .progress-row, .StatisticsCard-mobile .progress-row, .StatisticsCard-tablet .progress-row {
+    width: 135px;
+    margin-top: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.StatisticsCard-desktop .progress-col, .StatisticsCard-mobile .progress-col, .StatisticsCard-tablet .progress-col {
+    height: 92px;
+    margin-top: 27px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.StatisticsCard-desktop .discoverMore-reviews, .StatisticsCard-mobile .discoverMore-reviews, .StatisticsCard-tablet .discoverMore-reviews {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #337ab7;
+    cursor: pointer
+}
+
+.StatisticsCard-desktop .review, .StatisticsCard-mobile .review, .StatisticsCard-tablet .review {
+    width: 100%;
+    margin-bottom: 40px
+}
+
+.StatisticsCard-desktop .review .review-studentInfo, .StatisticsCard-mobile .review .review-studentInfo, .StatisticsCard-tablet .review .review-studentInfo {
+    margin-bottom: 13px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative
+}
+
+.StatisticsCard-desktop .review .review-studentInfo-left, .StatisticsCard-mobile .review .review-studentInfo-left, .StatisticsCard-tablet .review .review-studentInfo-left {
+    margin-right: 16px;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.StatisticsCard-desktop .review .review-studentInfo-right, .StatisticsCard-mobile .review .review-studentInfo-right, .StatisticsCard-tablet .review .review-studentInfo-right {
+    height: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.StatisticsCard-desktop .review .review-studentInfo-testimonial, .StatisticsCard-mobile .review .review-studentInfo-testimonial, .StatisticsCard-tablet .review .review-studentInfo-testimonial {
+    position: absolute;
+    right: 0
+}
+
+.StatisticsCard-desktop .review .studentName, .StatisticsCard-mobile .review .studentName, .StatisticsCard-tablet .review .studentName {
+    font-size: 14px;
+    color: #333
+}
+
+.StatisticsCard-desktop .review .teacherCard-flag, .StatisticsCard-mobile .review .teacherCard-flag, .StatisticsCard-tablet .review .teacherCard-flag {
+    margin-left: 10px
+}
+
+.StatisticsCard-desktop .review .studentDate, .StatisticsCard-desktop .review .studentLessons, .StatisticsCard-mobile .review .studentDate, .StatisticsCard-mobile .review .studentLessons, .StatisticsCard-tablet .review .studentDate, .StatisticsCard-tablet .review .studentLessons {
+    font-size: 10px;
+    color: #777
+}
+
+.StatisticsCard-desktop .review .review-content, .StatisticsCard-mobile .review .review-content, .StatisticsCard-tablet .review .review-content {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.StatisticsCard-desktop .review .review-studentInfo {
+    margin-bottom: 10px
+}
+
+.Teacher .StatisticsCard-desktop .teacherCard-box {
+    padding-bottom: 20px
+}
+
+.StatisticsCard-tablet .discoverMore-reviews {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.StatisticsCard-tablet .professionalExp-moreBtn {
+    margin-top: -10px
+}
+
+.StatisticsCard-mobile .statistics {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.StatisticsCard-mobile .statistic, .StatisticsCard-mobile .statistics {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.StatisticsCard-mobile .statistic {
+    width: 30%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.StatisticsCard-mobile .statistic-number {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333
+}
+
+.StatisticsCard-mobile .statistic-label {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.33;
+    color: #777
+}
+
+.StatisticsCard-mobile .professionalExp-moreBtn {
+    width: 100%;
+    height: 36px;
+    text-transform: uppercase
+}
+
+.StatisticsCard-mobile .reviews {
+    padding-top: 10px
+}
+
+.StatisticsCard-mobile .review {
+    margin-bottom: 30px
+}
+
+.StatisticsCard-mobile .review .review-studentInfo-right {
+    height: 40px
+}
+
+.StatisticsCard-mobile #StatisticsCard {
+    padding-bottom: 0;
+    margin-bottom: 30px
+}
+
+.Pagination {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.Pagination-next, .Pagination-prev {
+    width: 30px;
+    height: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.Pagination .Pagination-disabled {
+    opacity: .7;
+    cursor: not-allowed
+}
+
+.Pagination svg.Pagination-disabled {
+    fill: #369
+}
+
+.Pagination-body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.Pagination-btn {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #ccc;
+    cursor: pointer
+}
+
+.Pagination-btn:hover {
+    color: #999
+}
+
+.Pagination-btn-active {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer
+}
+
+.Pagination-btn-active, .Pagination-ellipsis {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center
+}
+
+.Pagination-ellipsis {
+    color: #ccc
+}
+
+.Reviews-desktop .review-modal-bar, .Reviews-mobile .review-modal-bar, .Reviews-tablet .review-modal-bar {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.Reviews-desktop .reviews-modal-filterBtn, .Reviews-mobile .reviews-modal-filterBtn, .Reviews-tablet .reviews-modal-filterBtn {
+    min-width: 66px;
+    height: 32px;
+    padding: 0 17px;
+    border-radius: 16px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: capitalize
+}
+
+.Reviews-desktop .reviewsModal-body-pc .reviews-modal-filterBtn, .Reviews-desktop .reviewsModal-body-pc .reviewsModal-filter-title, .Reviews-mobile .reviewsModal-body-pc .reviews-modal-filterBtn, .Reviews-mobile .reviewsModal-body-pc .reviewsModal-filter-title, .Reviews-tablet .reviewsModal-body-pc .reviews-modal-filterBtn, .Reviews-tablet .reviewsModal-body-pc .reviewsModal-filter-title {
+    margin-bottom: 10px
+}
+
+.Reviews-desktop .reviewsModal-filter, .Reviews-mobile .reviewsModal-filter, .Reviews-tablet .reviewsModal-filter {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd
+}
+
+.Reviews-desktop .reviewsModal-bar, .Reviews-mobile .reviewsModal-bar, .Reviews-tablet .reviewsModal-bar {
+    margin-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.Reviews-desktop .reviewsModal-bar > div:nth-child(2), .Reviews-mobile .reviewsModal-bar > div:nth-child(2), .Reviews-tablet .reviewsModal-bar > div:nth-child(2) {
+    padding-left: 10px;
+    -ms-flex: 1 1;
+    flex: 1 1
+}
+
+.Reviews-desktop .reviewModal-studentInfo, .Reviews-mobile .reviewModal-studentInfo, .Reviews-tablet .reviewModal-studentInfo {
+    margin-bottom: 13px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative
+}
+
+.Reviews-desktop .reviewModal-studentInfo-left, .Reviews-mobile .reviewModal-studentInfo-left, .Reviews-tablet .reviewModal-studentInfo-left {
+    margin-right: 16px;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.Reviews-desktop .reviewModal-studentInfo-right, .Reviews-mobile .reviewModal-studentInfo-right, .Reviews-tablet .reviewModal-studentInfo-right {
+    height: 60px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.Reviews-desktop .reviewModal-studentInfo-testimonial, .Reviews-mobile .reviewModal-studentInfo-testimonial, .Reviews-tablet .reviewModal-studentInfo-testimonial {
+    position: absolute;
+    right: 0
+}
+
+.Reviews-desktop .reviewModal-studentName, .Reviews-mobile .reviewModal-studentName, .Reviews-tablet .reviewModal-studentName {
+    font-size: 14px;
+    color: #333
+}
+
+.Reviews-desktop .reviewModal-studentLessons, .Reviews-mobile .reviewModal-studentLessons, .Reviews-tablet .reviewModal-studentLessons {
+    font-size: 10px;
+    color: #777;
+    text-transform: capitalize
+}
+
+.Reviews-desktop .reviewModal-studentDate, .Reviews-mobile .reviewModal-studentDate, .Reviews-tablet .reviewModal-studentDate {
+    font-size: 10px;
+    color: #777
+}
+
+.Reviews-desktop .reviewModal-blackbar, .Reviews-mobile .reviewModal-blackbar, .Reviews-tablet .reviewModal-blackbar {
+    width: 10px;
+    height: 4px;
+    border-bottom: 1px solid #333
+}
+
+.Reviews-desktop .reviewModal-content, .Reviews-mobile .reviewModal-content, .Reviews-tablet .reviewModal-content {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: pre-wrap
+}
+
+.Reviews-desktop .reviewsModal-body-mobile, .Reviews-mobile .reviewsModal-body-mobile, .Reviews-tablet .reviewsModal-body-mobile {
+    padding: 20px
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .reviewsModal-bar, .Reviews-mobile .reviewsModal-body-mobile .reviewsModal-bar, .Reviews-tablet .reviewsModal-body-mobile .reviewsModal-bar {
+    margin-bottom: 20px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .reviewsModal-bar > div:nth-child(2), .Reviews-mobile .reviewsModal-body-mobile .reviewsModal-bar > div:nth-child(2), .Reviews-tablet .reviewsModal-body-mobile .reviewsModal-bar > div:nth-child(2) {
+    padding-left: 0
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .reviewsModal-bar .reviews-modal-filterBtn, .Reviews-mobile .reviewsModal-body-mobile .reviewsModal-bar .reviews-modal-filterBtn, .Reviews-tablet .reviewsModal-body-mobile .reviewsModal-bar .reviews-modal-filterBtn {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-right: 10px
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .reviewsModal-filter, .Reviews-mobile .reviewsModal-body-mobile .reviewsModal-filter, .Reviews-tablet .reviewsModal-body-mobile .reviewsModal-filter {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-bottom: 0
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .review-modal-bar, .Reviews-mobile .reviewsModal-body-mobile .review-modal-bar, .Reviews-tablet .reviewsModal-body-mobile .review-modal-bar {
+    padding-bottom: 40px;
+    margin-bottom: 40px
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .reviewModal-studentInfo-left, .Reviews-desktop .reviewsModal-body-mobile .reviewModal-studentInfo-right, .Reviews-mobile .reviewsModal-body-mobile .reviewModal-studentInfo-left, .Reviews-mobile .reviewsModal-body-mobile .reviewModal-studentInfo-right, .Reviews-tablet .reviewsModal-body-mobile .reviewModal-studentInfo-left, .Reviews-tablet .reviewsModal-body-mobile .reviewModal-studentInfo-right {
+    height: 40px
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .Pagination, .Reviews-mobile .reviewsModal-body-mobile .Pagination, .Reviews-tablet .reviewsModal-body-mobile .Pagination {
+    margin-top: -10px
+}
+
+.Reviews-desktop .modal-footer, .Reviews-mobile .modal-footer, .Reviews-tablet .modal-footer {
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.Reviews-desktop .reviewModal-noRecode, .Reviews-mobile .reviewModal-noRecode, .Reviews-tablet .reviewModal-noRecode {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #777
+}
+
+.Reviews-desktop .reviewModal-noRecode:after, .Reviews-mobile .reviewModal-noRecode:after, .Reviews-tablet .reviewModal-noRecode:after {
+    content: "";
+    display: block;
+    height: 40px;
+    visibility: hidden
+}
+
+.Reviews-desktop .reviewsModal-body-pc .review-modal-bar:last-child, .Reviews-mobile .reviewsModal-body-pc .review-modal-bar:last-child, .Reviews-tablet .reviewsModal-body-pc .review-modal-bar:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none
+}
+
+.Reviews-desktop .reviewsModal-body-mobile .review-modal-bar:last-child, .Reviews-mobile .reviewsModal-body-mobile .review-modal-bar:last-child, .Reviews-tablet .reviewsModal-body-mobile .review-modal-bar:last-child {
+    margin-bottom: 30px
+}
+
+.Reviews-desktop .reviewsModal-body-mobile.modal-body:after, .Reviews-mobile .reviewsModal-body-mobile.modal-body:after, .Reviews-tablet .reviewsModal-body-mobile.modal-body:after {
+    height: 0
+}
+
+.progressBar-row {
+    border: .5px solid #ddd;
+    border-radius: 11px;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.progressBar-col, .progressBar-row {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.progressBar-col {
+    border: .5px solid #ddd;
+    border-radius: 4px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse
+}
+
+.progressBar-row-bar {
+    min-width: 1px;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.progressBar-col-bar, .progressBar-row-bar {
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff
+}
+
+.progressBar-col-bar {
+    min-height: 1px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.progressBar-row-text {
+    width: 40px
+}
+
+.progressBar-col-text, .progressBar-row-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    color: #777
+}
+
+.progressBar-col-text {
+    height: 20px
+}
+
+.ProgressBar-row-number-bg {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #777
+}
+
+.ProgressBar-col-number-bg {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777
+}
+
+.progressBar-row-number {
+    margin-left: 5px
+}
+
+.progressBar-col-number {
+    margin-bottom: 5px
+}
+
+.bar-box-row {
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    bottom: 0
+}
+
+.bar-box-col, .bar-box-row {
+    position: absolute;
+    overflow: hidden
+}
+
+.bar-box-col {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.block-user-desktop .success-or-error, .block-user-mobile .success-or-error, .block-user-tablet .success-or-error {
+    text-align: center
+}
+
+.block-user-desktop .margin-b-30, .block-user-mobile .margin-b-30, .block-user-tablet .margin-b-30 {
+    margin-bottom: 30px
+}
+
+.TeacherCardBottom-desktop .reportTeacher, .TeacherCardBottom-mobile .reportTeacher, .TeacherCardBottom-tablet .reportTeacher {
+    line-height: 21px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 40px
+}
+
+.TeacherCardBottom-desktop .textarea_left, .TeacherCardBottom-mobile .textarea_left, .TeacherCardBottom-tablet .textarea_left {
+    width: 100%
+}
+
+.TeacherCardBottom-desktop .TeacherCard-bottom-text {
+    margin-right: 30px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #337ab7;
+    cursor: pointer
+}
+
+.TeacherCardBottom-tablet .teacherCard-bottom-text, .TeacherCardBottom-tablet .teacherCard-bottom-text2 {
+    display: inline-block;
+    margin: 20px 20px 15px 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #337ab7;
+    cursor: pointer
+}
+
+.TeacherCardBottom-tablet .teacherCard-bottom-text:nth-child(2) {
+    margin-left: 0
+}
+
+.TeacherCardBottom-tablet .teacherCard-bottom-text2 {
+    margin-right: 30px;
+    font-weight: 400;
+    color: #777
+}
+
+.TeacherCardBottom-mobile {
+    margin-top: 20px
+}
+
+.TeacherCardBottom-mobile .teacherCard-bottom-text, .TeacherCardBottom-mobile .teacherCard-bottom-text2 {
+    display: block;
+    padding: 0 20px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #337ab7;
+    cursor: pointer
+}
+
+.TeacherCardBottom-mobile .teacherCard-bottom-text2 {
+    font-weight: 400;
+    color: #777
+}
+
+.teacher-right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.bookCard {
+    position: relative;
+    top: 0;
+    right: 0
+}
+
+.teacher-right-fixed {
+    position: fixed;
+}
+
+.teacher-right-absolute, .teacher-right-fixed {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 9
+}
+
+.teacher-right-absolute {
+    margin-left: 0;
+    position: absolute;
+    bottom: 104px;
+    right: 0
+}
+
+.teacher-book {
+    width: 367px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .1)
+}
+
+.bookCards div.bookCard-hr:nth-last-child(2) {
+    border-bottom: none
+}
+
+.teacher-right-booknow {
+    width: 327px;
+    height: 42px;
+    margin: 0 20px 20px;
+    font-size: 16px
+}
+
+.teacher-right-booknow:first-child {
+    margin-top: 20px
+}
+
+.teacher-schedule {
+    margin-top: 20px;
+    padding: 20px 20px 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .1);
+    cursor: pointer
+}
+
+.bookCard-box {
+    padding: 5px
+}
+
+.bookCard-box, .bookCard-left {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.bookCard-left {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.bookCard-right {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.bookCard-title {
+    font-size: 16px;
+    color: #333
+}
+
+.bookCard-support-icon {
+    margin-left: 5px
+}
+
+.bookCard-priceNew {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333
+}
+
+.bookCard-hr {
+    width: 327px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd
+}
+
+.bookCard-price-from {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 10px;
+    color: #333
+}
+
+.bookCard {
+    width: 357px;
+    min-height: 71px;
+    padding: 0 15px;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.bookCard:hover {
+    background-color: hsla(0, 0%, 80%, .2)
+}
+
+.bookCard:disabled, .bookCard[disabled] {
+    cursor: not-allowed
+}
+
+.bookCard-note {
+    font: 14px;
+    color: #777
+}
+
+.bookCard-time {
+    font: 16px;
+    color: #333
+}
+
+.teacher-isSchedule {
+    padding: 20px 0;
+    margin: 0 20px;
+    border-top: 1px solid #ddd;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.64;
+    color: #777
+}
+
+.teacher-isSchedule img {
+    margin-right: 15px
+}
+
+.switch-profile-box {
+    margin-top: 20px;
+    padding: 20px
+}
+
+.switch-profile-box button {
+    width: 100%
+}
+
+.MyCalendar .calendar {
+    width: auto
+}
+
+.MyCalendar {
+    padding: 20px 20px 30px
+}
+
+.MyCalendar.modal-body {
+    padding: 0 30px;
+    overflow-y: scroll
+}
+
+.MyCalendar.modal-body:after {
+    height: 0
+}
+
+.MyCalendar .booking-calendar-navigation {
+    margin: 0
+}
+
+.prev-week {
+    margin-right: 8px
+}
+
+.next-week {
+    margin-right: 10px
+}
+
+.next-week, .prev-week {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid #777;
+    border-radius: 50%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff
+}
+
+.next-week:active, .prev-week:active {
+    background: #eee;
+    border: 1px solid #eee
+}
+
+.MyCalendar .calendar-cell-actived {
+    cursor: auto
+}
+
+.teacher-week-navigation {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd
+}
+
+.book-calendar-hint {
+    margin-right: 20px
+}
+
+.book-calendar-hint, .book-calendar-labels-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.book-calendar-labels-box {
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.book-calendar-labels {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1
+}
+
+.book-calendar-labels > span {
+    margin-right: 20px
+}
+
+.book-time-available, .book-time-not-available, .book-time-selected {
+    display: inline-block;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%
+}
+
+.book-time-available {
+    background-color: #7ec937
+}
+
+.book-time-not-available {
+    background-color: #eee
+}
+
+.book-time-selected {
+    background-color: #cff1c2;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, #fff 0, #fff 3px)
+}
+
+.book-calendar-hint {
+    margin-right: 10px;
+    font-size: 12px;
+    color: #777
+}
+
+.book-calendar-bookBtn {
+    width: 100%
+}
+
+.MyCalendar-mobile .book-calendar-hint {
+    margin-top: 20px;
+    font-size: 10px;
+    color: #777;
+    text-align: center
+}
+
+.Teacher-desktop .greenPoint-left, .Teacher-mobile .greenPoint-left, .Teacher-tablet .greenPoint-left {
+    font-size: 12px;
+    color: #7ec937;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.Teacher-desktop .small-schedule-timezone, .Teacher-mobile .small-schedule-timezone, .Teacher-tablet .small-schedule-timezone {
+    margin-top: 0
+}
+
+.Teacher-desktop .greenPoint-left:before, .Teacher-mobile .greenPoint-left:before, .Teacher-tablet .greenPoint-left:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #7ec937
+}
+
+.Teacher-desktop .font-14-333, .Teacher-mobile .font-14-333, .Teacher-tablet .font-14-333 {
+    font-size: 14px;
+    color: #333
+}
+
+.Teacher-desktop .blackbar, .Teacher-mobile .blackbar, .Teacher-tablet .blackbar {
+    width: 10px;
+    height: 4px;
+    border-bottom: 1px solid #333
+}
+
+.Teacher-desktop .redbar, .Teacher-mobile .redbar, .Teacher-tablet .redbar {
+    width: 15px;
+    border-bottom: 2px solid #ff4338;
+    border-radius: 1px
+}
+
+.Teacher-desktop .redbar-left, .Teacher-desktop .redbar-left-title, .Teacher-mobile .redbar-left, .Teacher-mobile .redbar-left-title, .Teacher-tablet .redbar-left, .Teacher-tablet .redbar-left-title {
+    height: 14px;
+    padding-left: 10px;
+    border-left: 2px solid #ff4338;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333
+}
+
+.Teacher-desktop .redbar-left-title, .Teacher-mobile .redbar-left-title, .Teacher-tablet .redbar-left-title {
+    margin-bottom: 30px;
+    font-size: 23px
+}
+
+.Teacher-desktop .uppercase, .Teacher-mobile .uppercase, .Teacher-tablet .uppercase {
+    text-transform: uppercase
+}
+
+.Teacher-desktop .flex-row, .Teacher-mobile .flex-row, .Teacher-tablet .flex-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.Teacher-desktop .flex-row-center, .Teacher-mobile .flex-row-center, .Teacher-tablet .flex-row-center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.Teacher-desktop .flex-row-spaceBetween, .Teacher-mobile .flex-row-spaceBetween, .Teacher-tablet .flex-row-spaceBetween {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.Teacher-desktop .teacherCard-box1, .Teacher-mobile .teacherCard-box1, .Teacher-tablet .teacherCard-box1 {
+    width: 752px;
+    margin-bottom: 21px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .1);
+    overflow: hidden
+}
+
+.Teacher-desktop .teacherCard-box, .Teacher-mobile .teacherCard-box, .Teacher-tablet .teacherCard-box {
+    width: 752px;
+    margin-bottom: 20px;
+    padding: 40px 30px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, .1)
+}
+
+.Teacher-desktop .teacherCard-box > div:last-child, .Teacher-mobile .teacherCard-box > div:last-child, .Teacher-tablet .teacherCard-box > div:last-child {
+    padding-top: 41px;
+    padding-bottom: 0;
+    border: none
+}
+
+.Teacher-desktop .teacherCard-box > div:first-child, .Teacher-mobile .teacherCard-box > div:first-child, .Teacher-tablet .teacherCard-box > div:first-child {
+    padding-top: 0
+}
+
+.Teacher-desktop .teacherCard-bar, .Teacher-mobile .teacherCard-bar, .Teacher-tablet .teacherCard-bar {
+    padding: 30px 0 40px;
+    border-bottom: 1px solid #ddd
+}
+
+.Teacher-desktop .cardTitle, .Teacher-mobile .cardTitle, .Teacher-tablet .cardTitle {
+    height: 27px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: #333
+}
+
+.Teacher-desktop .cardTitle-flexStart, .Teacher-mobile .cardTitle-flexStart, .Teacher-tablet .cardTitle-flexStart {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.Teacher-desktop.Teacher, .Teacher-mobile.Teacher, .Teacher-tablet.Teacher {
+    font-size: 14px;
+    font-family: Roboto;
+    color: #333
+}
+
+.Teacher-desktop .Teacher-main, .Teacher-mobile .Teacher-main, .Teacher-tablet .Teacher-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.Teacher-desktop .Teacher-bottom-text, .Teacher-mobile .Teacher-bottom-text, .Teacher-tablet .Teacher-bottom-text {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #777
+}
+
+.Teacher-desktop.Teacher {
+    width: 1140px;
+    margin: 15px auto;
+    position: relative;
+    padding-bottom: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.Teacher-desktop .Teacher-main {
+    margin-right: 20px
+}
+
+.Teacher-tablet {
+    margin-top: -30px
+}
+
+.Teacher-tablet .teacherCard-box1 {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none;
+    border-radius: 0;
+    display: block;
+    box-shadow: none
+}
+
+.Teacher-tablet .teacherCard-box {
+    width: unset;
+    padding: 40px 0;
+    margin: 0 30px;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    box-shadow: none
+}
+
+.Teacher-tablet .teacherCard-box.ProfessionalExpCard > div:last-child, .Teacher-tablet .teacherCard-box > div.smallSchedule-teacherCard-bar:last-child {
+    padding-top: 0
+}
+
+.Teacher-tablet .cardTitle {
+    margin-bottom: 40px
+}
+
+.Teacher-tablet .smallSchedule-teacherCard-bar .cardTitle {
+    margin-bottom: 25px
+}
+
+.Teacher-tablet .teacher-schedule {
+    margin-top: 0;
+    padding: 0;
+    box-shadow: unset
+}
+
+.Teacher-tablet .Teacher-bottom-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0
+}
+
+.Teacher-tablet .Teacher-bottom, .Teacher-tablet .Teacher-bottom-fixed {
+    width: 100%;
+    height: 82px;
+    padding: 20px;
+    border-radius: 6px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 -5px 25px 0 rgba(0, 0, 0, .1);
+    z-index: 99
+}
+
+.Teacher-tablet .Teacher-bottom-fixed.hidden, .Teacher-tablet .Teacher-bottom.hidden {
+    display: none
+}
+
+.Teacher-tablet .booknow {
+    width: 100%;
+    height: 42px;
+    margin-top: 0;
+    border-radius: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    background-image: linear-gradient(270deg, #ff786b, #ff4338);
+    cursor: pointer
+}
+
+.Teacher-tablet .booknow:disabled, .Teacher-tablet .booknow[disabled] {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+.Teacher-mobile .small-schedule-button-mobile {
+    max-width: none
+}
+
+.Teacher-mobile .redbar-left, .Teacher-mobile .redbar-left-title {
+    font-size: 1.6rem
+}
+
+.Teacher-mobile.Teacher, .Teacher-mobile .teacherCard-box1 {
+    width: 100%;
+    border: none;
+    display: block
+}
+
+.Teacher-mobile .teacherCard-box1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.Teacher-mobile .teacherCard-box {
+    width: unset;
+    padding: 30px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #ddd;
+    border-radius: unset;
+    display: block;
+    box-shadow: none
+}
+
+.Teacher-mobile .teacherCard-box > div:last-child {
+    padding-top: 30px
+}
+
+.Teacher-mobile .teacherCard-box.ProfessionalExpCard > div:last-child, .Teacher-mobile .teacherCard-box > div.smallSchedule-teacherCard-bar:last-child, .Teacher-mobile .teacherCard-box > div:first-child {
+    padding-top: 0
+}
+
+.Teacher-mobile .smallSchedule-teacherCard-box {
+    padding-bottom: 20px
+}
+
+.Teacher-mobile .teacherCard-bar {
+    padding: 30px 0
+}
+
+.Teacher-mobile .cardTitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #333
+}
+
+.Teacher-mobile .smallSchedule-teacherCard-bar .cardTitle {
+    margin-bottom: 15px
+}
+
+.Teacher-mobile .teacher-schedule {
+    margin-top: 0;
+    padding: 0;
+    box-shadow: unset
+}
+
+.Teacher-mobile .Teacher-bottom-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0
+}
+
+.Teacher-mobile .Teacher-bottom, .Teacher-mobile .Teacher-bottom-fixed {
+    width: 100%;
+    height: 82px;
+    padding: 20px;
+    border-radius: 6px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 -5px 25px 0 rgba(0, 0, 0, .1);
+    z-index: 99
+}
+
+.Teacher-mobile .Teacher-bottom-fixed.hidden, .Teacher-mobile .Teacher-bottom.hidden {
+    display: none
+}
+
+.Teacher-mobile .booknow {
+    width: 100%;
+    height: 42px;
+    margin-top: 0;
+    border-radius: 3px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    background-image: linear-gradient(270deg, #ff786b, #ff4338);
+    cursor: pointer
+}
+
+.Teacher-mobile .booknow:disabled, .Teacher-mobile .booknow[disabled] {
+    opacity: .5;
+    cursor: not-allowed
+}
